@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Arimo&family=Quicksand:wght@400;500&family=Work+Sans:wght@300;400&display=swap');
+
+body {
+  background-image: url(media/Time\ to\ Forget\ Cropped.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* Nav Bar */
+
+header {
+  background-color: #231917;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  flex-grow: 0;
+}
+
+footer {
+  background-color: #231917;
+  flex-shrink: 0;
+}
+
+nav ul {
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#nav-link, #contact-info {
+  margin: 0 40px;
+  font-family: 'Work Sans';
+  color: #d5deea;
+}
+
+#nav-link:hover {
+  color: white;
+}
+
+#gus-id {
+  margin-left: auto;
+  height: 56px;
+  width: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#gus-id:hover {
+  cursor: default;
+}
+
+#header-spacer {
+  margin-right: auto;
+  height: 56px;
+  width: 100px;
+  visibility: hidden;
+}
+
+h4 {
+  font-weight: 300;
+  display: inline-block;
+  grid-area: 1 / 2 / span 1 / span 1;
+  margin: auto;
+  font-family: 'Work Sans';
+  color: #d5deea;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
+#gus-id img {
+  width: 50px;
+  height: auto;
+  border-radius: 25px;
+  border: solid gray 2px;
+  display: inline-block;
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+
+/* Home */
+#home-body {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+
+#home-body .home-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  flex-grow: 1;
+}
+
+.home-grid .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: 1 / 1 / span 1 / span 1;
+  background-image: url(media/bassneck.png);
+  background-blend-mode: saturation;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+
+
+.home-grid .desc {
+  margin: auto;
+  justify-self: center;
+  color: #d5deea;
+  font-family: 'Work Sans';
+  justify-items: center;
+  text-align: center;
+  width: 300px;
+  height: 220px;
+  border-radius: 100px;
+}
+
+.desc h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 120px;
+  letter-spacing: 10px;
+  line-height: 1;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  text-shadow: 1px 1px 20px #160f0e,
+  -1px 1px 20px #160f0e,
+  1px -1px 20px #160f0e,
+  -1px -1px 20px #160f0e;
+}
+
+.desc h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px #140e0d,
+        -2px 2px 4px #140e0d,
+        2px -2px 4px #140e0d,
+        -2px -2px 4px #140e0d;
+  font-weight: 300;
+}
+.desc:hover {
+  cursor: default;
+}
+
+#portrait {
+  width: 280px;
+  height: auto;
+  border-radius: 140px;
+  margin: auto;
+  border: 3px #d5deea solid;
+  box-shadow: 1px 1px 20px #160f0e,
+  -1px 1px 20px #160f0e,
+  1px -1px 20px #160f0e,
+  -1px -1px 20px #160f0e;
+}
+
+#cassete {
+  align-items: center;
+  justify-self: center;
+  
+}
+
+.links {
+  display: grid;
+  grid-area: auto;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.biolink {
+  margin: 15px;
+  border: 2px solid #231917;
+  width: 100px;
+  height: 80px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: #231917 7px 7px 7px;
+}
+
+.biolink:hover {
+  background-color: hsl(215, 24%, 86%);
+  cursor: pointer;
+}
+
+.biolink img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+}
+
+
+
+
+/* Music */
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 50px auto;
+  margin-bottom: 50px;
+}
+
+.album-title {
+  place-self: center;
+  font-size: 20px;
+  font-family: 'Work Sans';
+  color: #231917;
+  font-weight: 400;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+  color: #251a18;
+  text-decoration-thickness: 2px;
+
+}
+
+.album-art {
+  place-self: center;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.album-art img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.album-info {
+  place-self: center;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(34, 34, 34);
+  z-index: 2;
+  opacity: 0;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+  transition: .3s;
+  font-family: 'Arial Black';
+}
+
+.album-info:hover {
+  cursor: pointer;
+}
+
+.album-info h3 {
+  color: white;
+  text-align: center;
+  grid-area: auto;
+  padding-top: 15px;
+}
+
+.album-info .tracklist {
+  display: table;
+  color: white;
+  list-style: none;
+  padding: 0px;
+  grid-area:  auto;
+  height: auto;
+  padding-bottom: 40px;
+  opacity: 100%;
+}
+
+.tracklist p {
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+  line-height: 200%;
+}
+
+#collage {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr;
+  height: 500px;
+  width: 500px;
+  align-items: stretch;
+}
+
+#collage img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  filter: brightness(90%);
+}
+
+#collage #boss-man {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#collage #thinking-ahead {
+  grid-area: 1 / 2 / span 1 /span 1;
+}
+#collage #time-to-forget {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#collage #leave-alone {
+  grid-area: 2 / 2 / span 1 /span 1;
+}
+
+.left .album-art, .left .album-info {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.left .album-title {
+  grid-area: 1 / 2 / span 1 / span 1;
+  padding-right: 20%;
+}
+
+.right .album-art, .right .album-info {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.right .album-title {
+  grid-area: 1 / 1 / span 1 / span 1;
+  padding-left: 20%;
+}
+
+
+/* Songs */
+.title-and-art {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: auto;
+  margin-top: 20px;
+  width: 475px;
+  font-family: 'Work Sans';
+}
+
+.title-and-art h2 {
+  align-self: center;
+  justify-self: center;
+  justify-self: right;
+  margin-right: 50px;
+}
+
+.title-and-art img {
+  height: 100px;
+  width: auto;
+  justify-self: center;
+}
+
+
+.songs-and-times:hover {
+  background-color: rgb(55, 55, 55);
+  cursor: pointer;
+}
+
+.audio-player {
+  margin: auto;
+  width: 475px;
+  background-color: rgb(55, 55, 55);
+  height: 30px;
+}
+
+.songs-and-times p {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #d5deea;
+  font-family: 'Arimo';
+}
+
+.song-title {
+  margin-left: 10px;
+}
+
+.song-length {
+  justify-self: right;
+  margin-right: 10px;
+}
+
+.songs-and-times {
+  margin: auto;
+  width: 475px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  background-color: rgb(34, 34, 34);
+  height: 30px;
+}
+
+.player-and-lyrics {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s ease-in-out;
+}
+
+.lyrics {
+  margin: auto;
+  width: 475px;
+  background-color: rgb(55, 55, 55);
+  color: #d5deea;
+  line-height: 1.5;
+  font-family: 'Arimo';
+}
+
+.lyrics p {
+  margin: 0 0 0 10px;
+  padding-bottom: 10px;
+}
+
+#mpm-body {
+  background-image: url(media/album-art/Mono\ Polar\ Mind.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+#news-body {
+  background-image: url(media/album-art/News.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+#singles-body {
+  background-image: url(media/Time\ to\ Forget\ Cropped.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* About */
+#about-body {
+  height: 100%;
+  background-image: url(media/aboutbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.about-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+}
+
+.about-info p {
+  width: 30%;
+  margin: auto;
+  font-family: 'Work Sans';
+  color: #d5deea;
+  text-shadow: 2px 2px 4px #140e0d,
+        -2px 2px 4px #140e0d,
+        2px -2px 4px #140e0d,
+        -2px -2px 4px #140e0d;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+  nav li {
+    display: block;
+  }
+  
+  #gus-id, #header-spacer {
+    display: none;
+  }
+
+  nav {
+    grid-area: 1 / 2 / span 1 / span 1;
+  }
+
+  .album-art, #collage, .album-info {
+    place-self: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  .album-info h3 {
+    font-size: 15px;
+  }
+
+  .tracklist p {
+    line-height: 150%;
+    font-size: 10px;
+  }
+
+  .about-info p {
+    width: 70%;
+  }
+
+  .album {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    width: 100%;
+  }
+
+  .left .album-art, .left .album-info {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+  
+  .left .album-title {
+    grid-area: 1 / 1 / span 1 / span 1;
+    padding-right: 0;
+  }
+  
+  .right .album-art, .right .album-info {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+  
+  .right .album-title {
+    grid-area: 1 / 1 / span 1 / span 1;
+    padding-left: 0;
+  }
+
+  .tracklist p {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+    line-height: 200%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #home-body .home-grid {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    flex-grow: 1;
+    background-image: url(media/bassneckvert.png);
+    background-blend-mode: saturation;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+  }
+  
+  .home-grid .row {
+    background: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+
+  .home-grid .desc {
+    margin: auto;
+    justify-self: center;
+    color: #d5deea;
+    font-family: 'Work Sans';
+    justify-items: center;
+    text-align: center;
+    width: 300px;
+    height: 220px;
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  
+  .title-and-art, .audio-player, .lyrics, .songs-and-times {
+    width: 300px;
+  }
+
+
+
+  .lyrics {
+    font-size: 15px;
+  }
+
+  #portrait {
+    width: 280px;
+    height: auto;
+    border-radius: 140px;
+    margin: auto;
+    border: 3px #d5deea solid;
+    box-shadow: 1px 1px 20px #160f0e,
+    -1px 1px 20px #160f0e,
+    1px -1px 20px #160f0e,
+    -1px -1px 20px #160f0e;
+  }
+
+}
+
+@media screen and (min-width: 2200px) {
+  .home-grid .row {
+    background-image: url(media/bassnecklong.png);
+  }
+}
+
+
+
