@@ -218,8 +218,6 @@ h4 {
 }
 
 
-
-
 /* Music */
 
 .album {
@@ -339,6 +337,7 @@ h4 {
 .left .album-title {
   grid-area: 1 / 2 / span 1 / span 1;
   padding-right: 20%;
+  padding-left: 10px;
 }
 
 .right .album-art, .right .album-info {
@@ -348,6 +347,7 @@ h4 {
 .right .album-title {
   grid-area: 1 / 1 / span 1 / span 1;
   padding-left: 20%;
+  padding-right: 10px;
 }
 
 
@@ -526,14 +526,8 @@ h4 {
     font-size: 15px;
   }
 
-  .tracklist p {
-    width: 70%;
-    line-height: 150%;
-    font-size: 10px;
-    display: table-cell; 
-    vertical-align: middle; 
-    text-align: center;
-    line-height: 200%;
+  .album-info p {
+    font-size: 12px;
   }
 
   .album {
@@ -565,7 +559,7 @@ h4 {
 @media screen and (max-width: 600px) {
   #home-body .home-grid {
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 3fr 2fr;
     flex-grow: 1;
     background-image: url(media/bassneckvert.png);
     background-blend-mode: saturation;
@@ -575,10 +569,18 @@ h4 {
     background-position-x: center;
   }
   
+  .about-info p {
+    width: 80%;
+  }
+
+  .links {
+    margin: 10px auto;
+  }
+
   .home-grid .row {
     background: none;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 3fr 4fr;
     grid-template-columns: 1fr;
   }
 
