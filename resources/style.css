@@ -352,31 +352,36 @@ h4 {
 
 
 /* Songs */
-.title-and-art {
+.album-with-lyrics {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title-links-and-art {
   display: grid;
   grid-template-columns: 1fr 4fr;
   margin: auto;
-  margin-top: 20px;
   width: 475px;
   font-family: 'Work Sans';
 }
 
-.title-and-art h2 {
+.title-links-and-art h2 {
   align-self: center;
   justify-self: center;
   justify-self: right;
   margin-right: 50px;
 }
 
-.title-and-art img {
+.title-links-and-art img {
   height: 100px;
   width: auto;
-  justify-self: center;
+  justify-self: left;
+  box-shadow: 1px 1px 15px #231917;
 }
 
 
 .songs-and-times:hover {
-  background-color: rgb(55, 55, 55);
+  background-color: #382d2a;
   cursor: pointer;
 }
 
@@ -392,6 +397,7 @@ h4 {
   margin-bottom: auto;
   color: #d5deea;
   font-family: 'Arimo';
+
 }
 
 .song-title {
@@ -408,33 +414,80 @@ h4 {
   width: 475px;
   display: grid;
   grid-template-columns: 5fr 1fr;
-  background-color: rgb(34, 34, 34);
+  background-color: #231917;
   height: 30px;
+  opacity: 90%;
 }
 
 .player-and-lyrics {
   max-height: 0;
   overflow: hidden;
   transition: max-height .2s ease-in-out;
+  
 }
 
 .lyrics {
   margin: auto;
   width: 475px;
-  background-color: rgb(55, 55, 55);
+  background-color: #231917;
   color: #d5deea;
   line-height: 1.5;
   font-family: 'Arimo';
+  opacity: 90%;
 }
 
 .lyrics p {
   margin: 0 0 0 10px;
   padding-bottom: 10px;
+  opacity: 100%;
+}
+
+.album-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 475px;
+  margin: auto;
+}
+
+.albumlink {
+  justify-self: center;
+  margin: 15px;
+  border: 2px solid #231917;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 1px 1px 10px #382724,
+  -1px 1px 10px #382724,
+  1px -1px 10px #382724,
+  -1px -1px 10px #382724;
+}
+
+.albumlink:hover {
+  background-color: hsl(215, 24%, 86%);
+  cursor: pointer;
+}
+
+
+.albumlink img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
 }
 
 #mpm-body {
-  background-image: url(media/MPM\ Lyrics.jpg);
-  background-size: cover;
+  background-image: url(media/MPMWhiteLyrics.png);
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -443,7 +496,7 @@ h4 {
 }
 
 #news-body {
-  background-image: url(media/album-art/News.jpeg);
+  background-image: url(media/NEWShighres.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -555,6 +608,10 @@ h4 {
     padding-left: 0;
   }
 
+  .about-info p {
+    width: 80%;
+  }
+
 }
 @media screen and (max-width: 600px) {
   #home-body .home-grid {
@@ -567,10 +624,6 @@ h4 {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
-  }
-  
-  .about-info p {
-    width: 80%;
   }
 
   .links {
@@ -597,7 +650,13 @@ h4 {
     grid-area: 1 / 1 / span 1 / span 1;
   }
   
-  .title-and-art, .audio-player, .lyrics, .songs-and-times {
+  .title-links-and-art, .audio-player, .lyrics, .songs-and-times {
+    width: 300px;
+  }
+
+  .album-links {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 300px;
   }
 

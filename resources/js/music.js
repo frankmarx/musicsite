@@ -8,7 +8,7 @@ for (i = 0; i < arts.length; i++) {
       this.style.opacity = "90%";
     } 
 		else {
-      this.style.opacity = "0";
+      this.style.opacity = "0%";
     }
 	});
 }
