@@ -419,6 +419,18 @@ h4 {
   opacity: 90%;
 }
 
+div.unreleased {
+  background-color: #0d0a0a;
+}
+
+span.unreleased {
+  color: #454545;
+}
+
+.unreleased p {
+  color: #454545;
+}
+
 .player-and-lyrics {
   max-height: 0;
   overflow: hidden;
