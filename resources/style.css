@@ -121,7 +121,6 @@ h4 {
 }
 
 
-
 .home-grid .desc {
   margin: auto;
   justify-self: center;
@@ -152,9 +151,9 @@ h4 {
   margin-top: 20px;
   margin-bottom: 0;
   text-shadow: 2px 2px 4px #140e0d,
-        -2px 2px 4px #140e0d,
-        2px -2px 4px #140e0d,
-        -2px -2px 4px #140e0d;
+         -2px 2px 4px #140e0d,
+         2px -2px 4px #140e0d,
+         -2px -2px 4px #140e0d;
   font-weight: 300;
 }
 .desc:hover {
@@ -379,6 +378,15 @@ h4 {
   box-shadow: 1px 1px 15px #231917;
 }
 
+.centered-art {
+  grid-template-columns: 1fr;
+}
+
+.centered-art img {
+  justify-self: center;
+  height: 200px;
+}
+
 
 .songs-and-times:hover {
   background-color: #382d2a;
@@ -555,9 +563,9 @@ span.unreleased {
   font-family: 'Work Sans';
   color: #d5deea;
   text-shadow: 2px 2px 4px #140e0d,
-        -2px 2px 4px #140e0d,
-        2px -2px 4px #140e0d,
-        -2px -2px 4px #140e0d;
+         -2px 2px 4px #140e0d,
+         2px -2px 4px #140e0d,
+         -2px -2px 4px #140e0d;
   line-height: 1.5;
   padding: 20px;
 }
@@ -649,7 +657,6 @@ span.unreleased {
     grid-template-columns: 1fr;
   }
 
-
   .home-grid .desc {
     margin: auto;
     justify-self: center;
@@ -695,4 +702,34 @@ span.unreleased {
     background-image: url(media/bassnecklong.png);
   }
 
+}
+
+.listen-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1DB954;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.listen-button:hover {
+  transform: scale(1.05);
+  background-color: #1ed760;
+  color: white;
+}
+
+.listen-button img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
