@@ -25,6 +25,9 @@ header {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   flex-grow: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 footer {
