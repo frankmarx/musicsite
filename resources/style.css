@@ -707,11 +707,19 @@ span.unreleased {
 
 }
 
+.listen-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .listen-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1DB954;
   color: white;
   font-family: 'Montserrat';
   font-weight: 700;
@@ -719,15 +727,13 @@ span.unreleased {
   border-radius: 50px;
   text-decoration: none;
   font-size: 20px;
-  margin: 20px auto;
-  width: fit-content;
+  width: 250px;
   transition: transform 0.2s, background-color 0.2s;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .listen-button:hover {
   transform: scale(1.05);
-  background-color: #1ed760;
   color: white;
 }
 
@@ -735,4 +741,10 @@ span.unreleased {
   width: 25px;
   height: 25px;
   margin-right: 10px;
+  object-fit: contain;
 }
+
+.listen-button.spotify { background-color: #1DB954; }
+.listen-button.apple-music { background-color: #fa57c1; }
+.listen-button.youtube { background-color: #FF0000; }
+.listen-button.pandora { background-color: #004d40; }
