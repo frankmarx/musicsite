@@ -1,42 +1,40 @@
 import { AlbumPage } from "../../components/AlbumPage";
 import data from "../../assets/data/song-master.json";
 
-const songs = data.idol;
+const songs = data.forgotten;
 
 const links = [
   {
-    url: "https://open.spotify.com/album/36YFGKNX9B95vXtj5wZP70?si=cXbjsC76RQO--OdGMbhTTg",
+    url: "https://open.spotify.com/album/5cAtIHF6Ep1fpdidc1b705?si=LTSedP_yTLK6PhW3v589Aw",
     link_type: "Spotify",
     imgSrc: "/media/logos/spotify.png",
     imgAlt: "Spotify"
   },
   {
-    url: "https://music.apple.com/us/album/idol/1825616142",
+    url: "https://music.apple.com/ae/album/forgotten-single/1813690536",
     link_type: "Apple Music",
     imgSrc: "/media/logos/applemusic.png",
-    imgAlt: "Apple Music",
-    className: "large-icon"
+    imgAlt: "Apple Music"
   },
   {
-    url: "https://www.youtube.com/watch?v=k25TT9lbM24&list=OLAK5uy_npcTUcD_iJS7q_btU-kyi1BrZYIOFh18s",
+    url: "https://www.youtube.com/watch?v=L9bRiiyGbVw&ab_channel=Gus",
     link_type: "YouTube",
     imgSrc: "/media/logos/youtube.png",
     imgAlt: "YouTube"
   },
   {
-    url: "https://www.pandora.com/artist/gus/idol/AL5dt4Pfl9krZrc",
+    url: "https://www.pandora.com/artist/gus/forgotten/forgotten/TRgr6VZqwjcmdm2",
     link_type: "Pandora",
     imgSrc: "/media/logos/pandora.png",
-    imgAlt: "Pandora",
-    className: "small-icon"
+    imgAlt: "Pandora"
   }
 ];
 
-export default function Idol() {
+export default function Forgotten() {
   return (
     <AlbumPage
-      albumTitle="Idol"
-      albumArt="/media/album-art/Idol.jpeg"
+      albumTitle="Forgotten"
+      albumArt="/media/album-art/Forgotten.jpeg"
       songs={songs}
       links={links}
     />

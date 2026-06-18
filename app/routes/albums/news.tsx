@@ -1,42 +1,40 @@
 import { AlbumPage } from "../../components/AlbumPage";
 import data from "../../assets/data/song-master.json";
 
-const songs = data.idol;
+const songs = data.news;
 
 const links = [
   {
-    url: "https://open.spotify.com/album/36YFGKNX9B95vXtj5wZP70?si=cXbjsC76RQO--OdGMbhTTg",
+    url: "https://open.spotify.com/album/3bKef3jSTazhxrzIHZ6O3o",
     link_type: "Spotify",
     imgSrc: "/media/logos/spotify.png",
     imgAlt: "Spotify"
   },
   {
-    url: "https://music.apple.com/us/album/idol/1825616142",
+    url: "https://music.apple.com/ca/album/news-ep/1513983073",
     link_type: "Apple Music",
     imgSrc: "/media/logos/applemusic.png",
-    imgAlt: "Apple Music",
-    className: "large-icon"
+    imgAlt: "Apple Music"
   },
   {
-    url: "https://www.youtube.com/watch?v=k25TT9lbM24&list=OLAK5uy_npcTUcD_iJS7q_btU-kyi1BrZYIOFh18s",
+    url: "https://www.youtube.com/channel/UCuhY29iIwlAtS48IG28xPIw",
     link_type: "YouTube",
     imgSrc: "/media/logos/youtube.png",
     imgAlt: "YouTube"
   },
   {
-    url: "https://www.pandora.com/artist/gus/idol/AL5dt4Pfl9krZrc",
+    url: "https://www.pandora.com/artist/gus/news/ALJzcr9X6nkklvV",
     link_type: "Pandora",
     imgSrc: "/media/logos/pandora.png",
-    imgAlt: "Pandora",
-    className: "small-icon"
+    imgAlt: "Pandora"
   }
 ];
 
-export default function Idol() {
+export default function News() {
   return (
     <AlbumPage
-      albumTitle="Idol"
-      albumArt="/media/album-art/Idol.jpeg"
+      albumTitle="News"
+      albumArt="/media/album-art/News.jpeg"
       songs={songs}
       links={links}
     />
