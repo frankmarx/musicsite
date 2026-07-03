@@ -9,6 +9,7 @@ import {
 
 import { Header } from "./components/Header";
 import type { Route } from "./+types/root";
+import { getMetaPixelBaseScript, getMetaPixelId } from "./lib/metaPixel";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -25,6 +26,13 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const rawMetaPixelId = import.meta.env.VITE_META_PIXEL_ID;
+  const metaPixelId = getMetaPixelId(rawMetaPixelId);
+
+  if (rawMetaPixelId && !metaPixelId && import.meta.env.DEV) {
+    console.warn("VITE_META_PIXEL_ID is set but invalid. Expected a numeric Meta Pixel ID.");
+  }
+
   return (
     <html lang="en">
       <head>
@@ -32,8 +40,26 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        {metaPixelId ? (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: getMetaPixelBaseScript(metaPixelId),
+            }}
+          />
+        ) : null}
       </head>
       <body>
+        {metaPixelId ? (
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src={`https://www.facebook.com/tr?id=${metaPixelId}&ev=PageView&noscript=1`}
+              alt=""
+            />
+          </noscript>
+        ) : null}
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -44,10 +70,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <>
+    <div id="app-shell">
       <Header />
-      <Outlet />
-    </>
+      <main id="app-content">
+        <Outlet />
+      </main>
+    </div>
   );
 }
 

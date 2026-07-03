@@ -1,7 +1,7 @@
 import { AlbumPage } from "../../components/AlbumPage";
 import data from "../../assets/data/song-master.json";
 
-const songs = data["leave-alone"];
+const songs = data.singles.filter((song) => song.title === "Leave Alone");
 
 const links = [
   {

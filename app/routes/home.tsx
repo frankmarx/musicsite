@@ -1,10 +1,8 @@
 import type { Route } from "./+types/home";
-import portrait from "/media/portrait.JPG";
 import spotifyLogo from "/media/logos/spotify.png";
 import appleMusicLogo from "/media/logos/applemusic.png";
 import youtubeLogo from "/media/logos/youtube.png";
 import pandoraLogo from "/media/logos/pandora.png";
-import instagramLogo from "/media/logos/instagram.png";
 import { MusicLink } from "../components/MusicLink";
 
 export function meta({}: Route.MetaArgs) {
@@ -19,7 +17,7 @@ export default function Home() {
     <div id="home-body">
       <div className="home-grid">
         <div className="row" id="guit">
-          <img src={portrait} id="portrait" alt="Gus portrait" />
+          <img src="/media/portrait_new.jpeg" id="portrait" alt="Gus portrait" />
           <div className="desc">
             <h1>GUS</h1>
             <h2>Producer, Singer, Songwriter</h2>

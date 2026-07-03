@@ -5,6 +5,16 @@ export default function Music() {
     <div id="music-page">
       <AlbumDisplay
         side="left"
+        id="heat"
+        artSrc="/media/album-art/heat.jpeg"
+        display="Heat - Gus"
+        album_display="Heat"
+        tracklist={["Heat"]}
+        link="/albums/heat"
+      />
+
+      <AlbumDisplay
+        side="right"
         id="fraud"
         artSrc="/media/album-art/Fraud-new.jpeg"
         display="Fraud - Gus"
@@ -119,6 +129,7 @@ export default function Music() {
         tracklist={["Dreaming", "Never Will Know", "Faces", "There With You", "I Wanna Know"]}
         link="/albums/news"
       />
+
     </div>
   );
 }

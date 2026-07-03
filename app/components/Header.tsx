@@ -1,11 +1,10 @@
 import { Link } from "react-router";
-import portrait from "/media/portrait.JPG";
 
 export function Header() {
   return (
     <header>
       <div id="gus-id">
-        <img src={portrait} alt="Gus" />
+        <img src="/media/portrait_new.jpeg" alt="Gus" />
         <h4>Gus</h4>
       </div>
       <nav>

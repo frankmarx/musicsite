@@ -34,6 +34,25 @@ npm run dev
 
 Your application will be available at `http://localhost:5173`.
 
+### Meta Pixel setup (MusicLink click tracking)
+
+1. In Meta Events Manager, create a new Pixel (or reuse your existing one) and copy its Pixel ID.
+2. Add this to your local environment:
+
+```bash
+VITE_META_PIXEL_ID=YOUR_PIXEL_ID
+```
+
+3. Restart the dev server.
+
+The app now sends:
+
+- `PageView` on page load (Meta base code)
+- `MusicLinkClick` (custom event) when a `MusicLink` is clicked
+- Platform-specific custom events such as `SpotifyClick`, `YouTubeClick`, `AppleMusicClick`, and `PandoraClick`
+
+Use Events Manager Test Events + Pixel Helper to validate events, then use those events in Ads Manager reporting/custom conversions.
+
 ## Building for Production
 
 Create a production build:

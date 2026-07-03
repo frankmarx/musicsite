@@ -6,6 +6,7 @@ export default [
   route("/about", "./routes/about.tsx"),
   route("/playlists", "./routes/playlists.tsx"),
   route("/i-learned-how-to-spell-psychedelic", "./routes/playlists/psychedelic.tsx"),
+  route("/summer-kisses", "./routes/playlists/summer-kisses.tsx"),
   route("/albums/idol", "./routes/albums/idol.tsx"),
   route("/albums/fraud", "./routes/albums/fraud.tsx"),
   route("/albums/forgotten", "./routes/albums/forgotten.tsx"),
@@ -19,4 +20,5 @@ export default [
   route("/albums/thinking-ahead", "./routes/albums/thinking-ahead.tsx"),
   route("/albums/boredagain", "./routes/albums/boredagain.tsx"),
   route("/albums/singles", "./routes/albums/singles.tsx"),
+  route("/albums/heat", "./routes/albums/heat.tsx"),
 ] satisfies RouteConfig;

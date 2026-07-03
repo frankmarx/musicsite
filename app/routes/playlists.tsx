@@ -10,6 +10,13 @@ export default function Playlists() {
         display="I Learned How to Spell Psychedelic"
         link="/i-learned-how-to-spell-psychedelic"
       />
+      <PlaylistDisplay
+        side="right"
+        id="summer-kisses"
+        artSrc="/media/album-art/summer-kisses.png"
+        display="Summer Kisses"
+        link="/summer-kisses"
+      />
     </div>
   );
 }
