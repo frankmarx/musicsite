@@ -10,7 +10,7 @@ export function Header() {
       <nav>
         <ul>
           <li><Link to="/" id="nav-link">Home</Link></li>
-          <li><Link to="/music" id="nav-link">Music</Link></li>
+          <li><Link to="/music" id="nav-link">Listen</Link></li>
           <li><Link to="/playlists" id="nav-link">Playlists</Link></li>
           <li><Link to="/about" id="nav-link">About</Link></li>
         </ul>

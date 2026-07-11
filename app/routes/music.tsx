@@ -15,16 +15,6 @@ export default function Music() {
 
       <AlbumDisplay
         side="right"
-        id="fraud"
-        artSrc="/media/album-art/Fraud-new.jpeg"
-        display="Fraud - Gus"
-        album_display="Fraud"
-        tracklist={["Fraud"]}
-        link="/albums/fraud"
-      />
-      
-      <AlbumDisplay
-        side="right"
         id="mr-come-and-go-dr-love"
         artSrc="/media/album-art/mcagdl.jpeg"
         display="Mr. Come and Go, Dr. Love - Gus"
@@ -35,6 +25,16 @@ export default function Music() {
 
       <AlbumDisplay
         side="left"
+        id="fraud"
+        artSrc="/media/album-art/Fraud-new.jpeg"
+        display="Fraud - Gus"
+        album_display="Fraud"
+        tracklist={["Fraud"]}
+        link="/albums/fraud"
+      />
+
+      <AlbumDisplay
+        side="right"
         id="no-more"
         artSrc="/media/album-art/no more.jpeg"
         display="No More - Gus"
@@ -44,7 +44,7 @@ export default function Music() {
       />
 
       <AlbumDisplay
-        side="right"
+        side="left"
         id="idol"
         artSrc="/media/album-art/Idol.jpeg"
         display="Idol - Gus"
@@ -63,7 +63,7 @@ export default function Music() {
       />
 
       <AlbumDisplay
-        side="left"
+        side="right"
         id="paradise"
         artSrc="/media/album-art/Paradise.jpg"
         display="Paradise - Gus"
@@ -81,7 +81,7 @@ export default function Music() {
       />
 
       <AlbumDisplay
-        side="right"
+        side="left"
         id="boredagain"
         artSrc="/media/album-art/Bored Again.jpeg"
         display="Bored Again - Gus"
@@ -91,7 +91,7 @@ export default function Music() {
       />
 
       <AlbumDisplay
-        side="left"
+        side="right"
         id="singles"
         artSrc="/media/album-art/Thinking Ahead.jpeg"
         display="Singles - Gus"
@@ -101,7 +101,7 @@ export default function Music() {
       />
 
       <AlbumDisplay
-        side="right"
+        side="left"
         id="mono-polar-mind"
         artSrc="/media/album-art/Mono Polar Mind.jpg"
         display="Mono Polar Mind - Marty Marx"
@@ -121,7 +121,7 @@ export default function Music() {
       />
 
       <AlbumDisplay
-        side="left"
+        side="right"
         id="news"
         artSrc="/media/album-art/News.jpeg"
         display="News - Gus"
