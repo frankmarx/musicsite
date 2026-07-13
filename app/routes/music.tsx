@@ -1,4 +1,9 @@
 import { AlbumDisplay } from "../components/AlbumDisplay";
+import type { Route } from "./+types/music";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Music - Gus" }];
+}
 
 export default function Music() {
   return (

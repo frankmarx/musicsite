@@ -1,4 +1,9 @@
 import { PlaylistDisplay } from "../components/PlaylistDisplay";
+import type { Route } from "./+types/playlists";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Playlists - Gus" }];
+}
 
 export default function Playlists() {
   return (

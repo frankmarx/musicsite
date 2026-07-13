@@ -1,4 +1,9 @@
 import { AlbumPage } from "../../components/AlbumPage";
+import type { Route } from "./+types/leave-alone";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Leave Alone - Gus" }];
+}
 import data from "../../assets/data/song-master.json";
 
 const songs = data.singles.filter((song) => song.title === "Leave Alone");

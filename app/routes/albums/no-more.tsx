@@ -1,11 +1,16 @@
 import { AlbumPage } from "../../components/AlbumPage";
+import type { Route } from "./+types/no-more";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "No More - Gus" }];
+}
 import data from "../../assets/data/song-master.json";
 
 const songs = data["no-more"];
 
 const links = [
   {
-    url: "https://open.spotify.com/track/55w36iB6xH5q9j0eG5uUq2",
+    url: "https://open.spotify.com/track/5hnmWKxgSlsPuSoxPUIfDx?si=728ae9295cdd4c50",
     link_type: "Spotify",
     imgSrc: "/media/logos/spotify.png",
     imgAlt: "Spotify"
@@ -18,7 +23,7 @@ const links = [
   },
   {
     url: "https://www.youtube.com/watch?v=SPhBj_3DswQ",
-    link_type: "Youtube",
+    link_type: "YouTube",
     imgSrc: "/media/logos/youtube.png",
     imgAlt: "Youtube"
   },

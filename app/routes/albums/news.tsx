@@ -1,4 +1,9 @@
 import { AlbumPage } from "../../components/AlbumPage";
+import type { Route } from "./+types/news";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "News - Gus" }];
+}
 import data from "../../assets/data/song-master.json";
 
 const songs = data.news;

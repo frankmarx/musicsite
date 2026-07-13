@@ -1,4 +1,9 @@
 import { AlbumPage } from "../../components/AlbumPage";
+import type { Route } from "./+types/thinking-ahead";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Thinking Ahead - Gus" }];
+}
 import data from "../../assets/data/song-master.json";
 
 const songs = data.singles.filter((song) => song.title === "Thinking Ahead");

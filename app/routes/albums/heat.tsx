@@ -1,4 +1,9 @@
 import { AlbumPage } from "../../components/AlbumPage";
+import type { Route } from "./+types/heat";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Heat - Gus" }];
+}
 
 const songs = [
   {

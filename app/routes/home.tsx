@@ -24,10 +24,10 @@ export default function Home() {
           </div>
         </div>
           <div className="links">
-            <MusicLink url="https://open.spotify.com/artist/2NigsMohfPC7W937PGlhku" link_type="spotify" imgSrc={spotifyLogo} imgAlt="Spotify" />
-            <MusicLink url="https://music.apple.com/ca/artist/gus/1513959770" link_type="apple-music" imgSrc={appleMusicLogo} imgAlt="Apple Music" />
-            <MusicLink url="https://www.youtube.com/channel/UCuhY29iIwlAtS48IG28xPIw" link_type="youtube" imgSrc={youtubeLogo} imgAlt="YouTube" />
-            <MusicLink url="https://www.pandora.com/artist/gus/ARPPvpXmnfV2ZxP" link_type="pandora" imgSrc={pandoraLogo} imgAlt="Pandora" />
+            <MusicLink url="https://open.spotify.com/artist/2NigsMohfPC7W937PGlhku" link_type="Spotify" imgSrc={spotifyLogo} imgAlt="Spotify" />
+            <MusicLink url="https://music.apple.com/ca/artist/gus/1513959770" link_type="Apple Music" imgSrc={appleMusicLogo} imgAlt="Apple Music" />
+            <MusicLink url="https://www.youtube.com/channel/UCuhY29iIwlAtS48IG28xPIw" link_type="YouTube" imgSrc={youtubeLogo} imgAlt="YouTube" />
+            <MusicLink url="https://www.pandora.com/artist/gus/ARPPvpXmnfV2ZxP" link_type="Pandora" imgSrc={pandoraLogo} imgAlt="Pandora" />
           </div>
 
       </div>

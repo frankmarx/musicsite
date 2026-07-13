@@ -1,4 +1,9 @@
 import { AlbumPage } from "../../components/AlbumPage";
+import type { Route } from "./+types/boredagain";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Bored Again - Gus" }];
+}
 import data from "../../assets/data/song-master.json";
 
 const songs = data.boredagain;

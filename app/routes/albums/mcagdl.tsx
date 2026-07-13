@@ -1,4 +1,9 @@
 import { AlbumPage } from "../../components/AlbumPage";
+import type { Route } from "./+types/mcagdl";
+
+export function meta({}: Route.MetaArgs) {
+  return [{ title: "Mr. Come and Go, Dr. Love - Gus" }];
+}
 import data from "../../assets/data/song-master.json";
 
 const songs = data.mcagdl;
