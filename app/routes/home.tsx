@@ -1,8 +1,8 @@
 import type { Route } from "./+types/home";
-import spotifyLogo from "/media/logos/spotify.png";
-import appleMusicLogo from "/media/logos/applemusic.png";
-import youtubeLogo from "/media/logos/youtube.png";
-import pandoraLogo from "/media/logos/pandora.png";
+import spotifyLogo from "../assets/media/logos/spotify.png";
+import appleMusicLogo from "../assets/media/logos/applemusic.png";
+import youtubeLogo from "../assets/media/logos/youtube.png";
+import pandoraLogo from "../assets/media/logos/pandora.png";
 import { MusicLink } from "../components/MusicLink";
 
 export function meta({}: Route.MetaArgs) {
