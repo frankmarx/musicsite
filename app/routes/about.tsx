@@ -15,15 +15,15 @@ export default function About() {
       <Carousel>
         <CarouselPicture src="/media/carouselpics/0O4A1815.jpeg" />
         <CarouselPicture src="/media/carouselpics/0O4A2261.jpeg" />
-        <CarouselPicture src="/media/carouselpics/000118690033.jpeg" />
         <CarouselPicture src="/media/carouselpics/000118690034.jpeg" />
+        <CarouselPicture src="/media/carouselpics/000118690033.jpeg" />
         <CarouselPicture src="/media/carouselpics/000120110026.jpeg" />
         <CarouselPicture src="/media/carouselpics/000120110038.jpeg" />
         <CarouselPicture src="/media/carouselpics/0O4A2637.jpeg" />
         <CarouselPicture src="/media/carouselpics/0O4A3184.jpeg" />
         <CarouselPicture src="/media/carouselpics/0O4A3458-2.jpeg" />
-        <CarouselPicture src="/media/carouselpics/112F2B5D-729C-46E3-B378-D1C96CB4EAEDIMG_0421.jpeg" />
         <CarouselPicture src="/media/carouselpics/Pro-Capture One 0130.jpeg" />
+        <CarouselPicture src="/media/carouselpics/112F2B5D-729C-46E3-B378-D1C96CB4EAEDIMG_0421.jpeg" />
         <CarouselPicture src="/media/carouselpics/Pro-Capture One 0138.jpeg" />
       </Carousel>
       <div className="about-info">

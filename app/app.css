@@ -679,6 +679,7 @@ span.unreleased {
   .left .album-title {
     grid-area: 1 / 1 / span 1 / span 1;
     padding-right: 0;
+    text-align: center;
   }
   
   .right .album-art, .right .album-info {
@@ -688,6 +689,7 @@ span.unreleased {
   .right .album-title {
     grid-area: 1 / 1 / span 1 / span 1;
     padding-left: 0;
+    text-align: center;
   }
 
   .about-info p {

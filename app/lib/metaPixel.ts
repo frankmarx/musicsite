@@ -33,6 +33,20 @@ function getPlatformEventName(platform: string): string {
   }
 }
 
+function normalizeCustomEventName(eventName: string | undefined): string | null {
+  if (!eventName) {
+    return null;
+  }
+
+  const trimmed = eventName.trim();
+  if (!trimmed) {
+    return null;
+  }
+
+  const sanitized = trimmed.replace(/[^a-zA-Z0-9_.]/g, "");
+  return sanitized || null;
+}
+
 export function getMetaPixelId(rawPixelId: string | undefined): string | null {
   if (!rawPixelId) {
     return null;
@@ -52,7 +66,7 @@ fbq('init', '${pixelId}');
 fbq('track', 'PageView');`;
 }
 
-export function trackMusicLinkClick(linkType: string, url: string): void {
+export function trackMusicLinkClick(linkType: string, url: string, eventName?: string): void {
   if (typeof window === "undefined" || typeof window.fbq !== "function") {
     return;
   }
@@ -63,7 +77,8 @@ export function trackMusicLinkClick(linkType: string, url: string): void {
     link_type: linkType,
     destination_url: url,
   };
+  const customEventName = normalizeCustomEventName(eventName);
 
   window.fbq("trackCustom", "MusicLinkClick", params);
-  window.fbq("trackCustom", getPlatformEventName(platform), params);
+  window.fbq("trackCustom", customEventName || getPlatformEventName(platform), params);
 }

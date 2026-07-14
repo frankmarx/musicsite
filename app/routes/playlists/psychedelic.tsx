@@ -16,7 +16,8 @@ export default function Psychedelic() {
           url="https://open.spotify.com/playlist/1PSknURKHBpcuRCPijf3nq?si=b058445c65474e26" 
           link_type="Spotify"
           imgSrc="/media/logos/spotify.png" 
-          imgAlt="Spotify" 
+          imgAlt="Spotify"
+          event_name="SpotifyPsychedelicPlaylistClick"
         />
       </div>
     </div>

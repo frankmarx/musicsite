@@ -17,6 +17,7 @@ export default function SummerKisses() {
           link_type="Spotify"
           imgSrc="/media/logos/spotify.png"
           imgAlt="Spotify"
+          event_name="SpotifySummerPlaylistClick"
         />
       </div>
     </div>

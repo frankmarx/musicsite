@@ -37,13 +37,20 @@ Your application will be available at `http://localhost:5173`.
 ### Meta Pixel setup (MusicLink click tracking)
 
 1. In Meta Events Manager, create a new Pixel (or reuse your existing one) and copy its Pixel ID.
-2. Add this to your local environment:
+2. For local development, create a `.env` or `.env.local` file with:
 
 ```bash
 VITE_META_PIXEL_ID=YOUR_PIXEL_ID
 ```
 
-3. Restart the dev server.
+3. For deployments such as AWS Amplify, set the same variable in your build environment so Vite can inject it at build time.
+
+The project now supports these patterns:
+
+- Local development: read the value from `.env`, `.env.local`, or similar Vite env files.
+- Production/CI: read `VITE_META_PIXEL_ID` from the environment when you deploy.
+
+Restart the dev server after changing environment variables.
 
 The app now sends:
 
