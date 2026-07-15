@@ -51,19 +51,19 @@ const songs = [
 
 const links = [
   {
-    url: "https://open.spotify.com/artist/2NigsMohfPC7W937PGlhku",
+    url: "https://open.spotify.com/track/4qR65lYjEUgD3Od3X0nv39?si=528af56e71e84279",
     link_type: "Spotify",
     imgSrc: "/media/logos/spotify.png",
     imgAlt: "Spotify",
   },
   {
-    url: "https://music.apple.com/ca/artist/gus/1513959770",
+    url: "https://music.apple.com/us/song/heat/6787567237",
     link_type: "Apple Music",
     imgSrc: "/media/logos/applemusic.png",
     imgAlt: "Apple Music",
   },
   {
-    url: "https://www.youtube.com/channel/UCuhY29iIwlAtS48IG28xPIw",
+    url: "https://www.youtube.com/watch?v=UQvcPSpt0Yo",
     link_type: "YouTube",
     imgSrc: "/media/logos/youtube.png",
     imgAlt: "YouTube",
