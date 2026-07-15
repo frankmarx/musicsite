@@ -39,7 +39,7 @@ export default function Nomore() {
   return (
     <AlbumPage
       albumTitle="No More"
-      albumArt="/media/album-art/no more.jpeg"
+      albumArt="/media/album-art/no-more.jpeg"
       songs={songs}
       links={links}
     />

@@ -39,7 +39,7 @@ export default function Mpm() {
   return (
     <AlbumPage
       albumTitle="Mono Polar Mind"
-      albumArt="/media/album-art/Mono Polar Mind.jpg"
+      albumArt="/media/album-art/mono-polar-mind.jpg"
       songs={songs}
       links={links}
     />

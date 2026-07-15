@@ -39,7 +39,7 @@ export default function LeaveAlone() {
   return (
     <AlbumPage
       albumTitle="Leave Alone"
-      albumArt="/media/album-art/Leave Alone.jpeg"
+      albumArt="/media/album-art/leave-alone.jpeg"
       songs={songs}
       links={links}
     />

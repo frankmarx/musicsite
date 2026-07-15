@@ -41,7 +41,7 @@ export default function Music() {
       <AlbumDisplay
         side="right"
         id="no-more"
-        artSrc="/media/album-art/no more.jpeg"
+        artSrc="/media/album-art/no-more.jpeg"
         display="No More - Gus"
         album_display="No More"
         tracklist={["No More"]}
@@ -88,7 +88,7 @@ export default function Music() {
       <AlbumDisplay
         side="left"
         id="boredagain"
-        artSrc="/media/album-art/Bored Again.jpeg"
+        artSrc="/media/album-art/bored-again.jpeg"
         display="Bored Again - Gus"
         album_display="Bored Again"
         tracklist={["Late Revelation", "Bored Again", "1WithU", "From the Heart"]}
@@ -98,7 +98,7 @@ export default function Music() {
       <AlbumDisplay
         side="right"
         id="singles"
-        artSrc="/media/album-art/Thinking Ahead.jpeg"
+        artSrc="/media/album-art/thinking-ahead.jpeg"
         display="Singles - Gus"
         album_display="Singles"
         tracklist={["Leave Alone", "Thinking Ahead"]}
@@ -108,7 +108,7 @@ export default function Music() {
       <AlbumDisplay
         side="left"
         id="mono-polar-mind"
-        artSrc="/media/album-art/Mono Polar Mind.jpg"
+        artSrc="/media/album-art/mono-polar-mind.jpg"
         display="Mono Polar Mind - Marty Marx"
         album_display="Mono Polar Mind"
         tracklist={[

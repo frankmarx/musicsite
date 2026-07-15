@@ -39,7 +39,7 @@ export default function Singles() {
   return (
     <AlbumPage
       albumTitle="Singles"
-      albumArt="/media/album-art/Thinking Ahead.jpeg"
+      albumArt="/media/album-art/thinking-ahead.jpeg"
       songs={songs}
       links={links}
     />

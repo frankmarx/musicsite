@@ -39,7 +39,7 @@ export default function BoredAgain() {
   return (
     <AlbumPage
       albumTitle="Bored Again"
-      albumArt="/media/album-art/Bored Again.jpeg"
+      albumArt="/media/album-art/bored-again.jpeg"
       songs={songs}
       links={links}
     />

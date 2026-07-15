@@ -39,7 +39,7 @@ export default function ThinkingAhead() {
   return (
     <AlbumPage
       albumTitle="Thinking Ahead"
-      albumArt="/media/album-art/Thinking Ahead.jpeg"
+      albumArt="/media/album-art/thinking-ahead.jpeg"
       songs={songs}
       links={links}
     />
