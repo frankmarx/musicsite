@@ -70,31 +70,18 @@ npm run build
 
 ## Deployment
 
-### Docker Deployment
+### AWS Amplify Deployment
 
-To build and run using Docker:
+If you deploy with AWS Amplify, make sure to set `VITE_META_PIXEL_ID` in Amplify's environment settings so the production build can inject it.
+
+The app builds into a production output folder when you run:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+npm install
+npm run build
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+If you deploy the app on a Node-capable host, the built output includes:
 
 ```
 ├── package.json
