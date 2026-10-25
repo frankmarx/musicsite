@@ -21,4 +21,5 @@ export default [
   route("/albums/boredagain", "./routes/albums/boredagain.tsx"),
   route("/albums/singles", "./routes/albums/singles.tsx"),
   route("/albums/heat", "./routes/albums/heat.tsx"),
+  route("/albums/little-lies", "./routes/albums/little-lies.tsx"),
 ] satisfies RouteConfig;
